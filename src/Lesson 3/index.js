@@ -1,3 +1,5 @@
+// NOT FROM LEET
+
 // const arr = [5, 4, 3, 101, 9, 99]
 
 // const sortFunc = (a, b) => {
