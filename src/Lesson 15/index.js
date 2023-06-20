@@ -15,7 +15,7 @@ var maxProfit = function(prices) {
     let smallest = Math.min(...prices)
     let smallestIndex = prices.indexOf(smallest)
 
-    if(smallestIndex = prices.indexOf(smallest) == prices.length) { return 0 }
+    // if(smallestIndex = prices.indexOf(smallest) == prices.length) { return 0 }
     let biggest = Math.max(...prices.slice(smallestIndex))
 
     return biggest - smallest
