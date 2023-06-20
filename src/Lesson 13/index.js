@@ -7,7 +7,7 @@
  */
 var equalPairs = function(grid) {
 
-     // for(let i = 0; i < grid.length; i++ ) {
+    // for(let i = 0; i < grid.length; i++ ) {
 
     //     let tempArray = []
       

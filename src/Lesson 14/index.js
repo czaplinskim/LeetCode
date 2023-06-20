@@ -25,40 +25,15 @@ function binarySearch(arr, target) {
     return false;
 
 }
+
 document.write(`Binary search result is: ${binarySearch(arr, 2)}`)
 
 // Recursive
 
-// function recursiveBinarySearch(arr, target) {
-
-//     if(arr[avg] === target) {
-
-//         console.log(arr[avg])
-
-//         console.log(target)
-
-//         return true;
-
-//     } else if(arr[avg] >= target) {
-//         console.log('2');
-
-//         binarySearch(arr.slice(0, avg), target);
-
-//     } else if(arr[avg] <= target) {
-
-//         console.log('3');
-
-//         binarySearch(arr.slice(avg, arr.length), target);
-
-//     } 
-    
-//     return false
-
-// }
 
 function recursiveBinarySearch(arr, target, start, end ) {
  
-
+// wyrzucamy error 
     if(start > end) { return false }
 
     let avg = Math.floor((start + end)/2);
@@ -69,11 +44,11 @@ function recursiveBinarySearch(arr, target, start, end ) {
 
     } else if(arr[avg] > target) {
 
-        recursiveBinarySearch(arr, target, start, avg-1);
+        return recursiveBinarySearch(arr, target, start, avg-1);
 
     } else if(arr[avg] < target) {
 
-        recursiveBinarySearch(arr, target, avg + 1, end)
+        return recursiveBinarySearch(arr, target, avg + 1, end)
 
     } 
     
