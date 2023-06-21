@@ -8,7 +8,6 @@ var lengthOfLastWord = function(s) {
     
     s = s.replace(/\s+/g, ' ').trim()
     s = s.split(" ")
-    
     lw = Array.from(s[s.length - 1])
 
     return lw.length
@@ -16,5 +15,4 @@ var lengthOfLastWord = function(s) {
 };
 
 let s = "   fly me   to   the moon  "
-
 console.log(lengthOfLastWord(s))
